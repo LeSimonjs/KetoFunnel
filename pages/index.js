@@ -11,7 +11,7 @@ export default function IndexPage() {
         </h1>
         <Link href="subscribe">
           <a>
-            <h2 className="p-3 font-bold bg-yellow-300 md:text-2xl mb-4 mt-4 hover:bg-yellow-400 text-gray-800">
+            <h2 className="p-4 font-bold bg-yellow-300 md:text-2xl mb-4 mt-4 hover:bg-yellow-400 text-gray-800">
               FREE DOWNLOAD 
             </h2>
           </a>
