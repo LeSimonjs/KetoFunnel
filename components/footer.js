@@ -4,11 +4,11 @@ export default function Footer() {
   return (
     <footer className="p-4 bg-white rounded-lg shadow md:px-6 md:py-8 dark:bg-gray-800">
         <div className="sm:flex sm:items-center sm:justify-between">
-          <a href="https://www.instagram.com/keto4life34/" className="flex items-center mb-4 sm:mb-0" rel="nofollow noopener" target="_blank">
+          <a href="https://www.instagram.com/keto4life34/" className="flex items-center mb-4 sm:mb-0" rel="nofollow noopener noreferrer" target="_blank">
               <img src="/instagram.svg" className="mr-3 h-8" />
               <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Keto Life</span>
           </a>
-          <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
+          <ul className="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
           
               <li>
                 <Link href="/privacy-policy">
