@@ -1,35 +1,32 @@
+import React from "react";
 
-const Subscribe = () => {
+export default function Subscribe() {
     return (
-      <div className="border border-gray-200 rounded p-6 my-4 w-full bg-white backdrop-filter backdrop-blur-lg bg-opacity-75">
-        <p className="text-gray-900 mb-6 text-lg md:text-xl">
-        ONE STEP LEFT! :-)
-        </p>
-        <p className="text-gray-800 dark:text-gray-400 mb-10 text-base">
-        To which e-mail address should we send the cookbook?
-        </p>
-        <form className="relative my-4">
-          <input
-            aria-label="Email for newsletter"
-            placeholder="john@email.com"
-            type="email"
-            autoComplete="email"
-            required
-            className="py-4 px-0 text-md bg-transparent w-9/12 text-gray-900 border-b-2 border-gray-600 dark:border-gray-400 dark:text-white focus:border-brand focus-visible:outline-none"
-          />
-          <button
-            className="flex justify-center px-5 py-4 mt-8 bg-green-600 text-white font-bold text-lg"
-            type="submit"
-          >
-            SEND NOW
-          </button>
-        </form>
-  
-        <p className="text-xl text-gray-800 dark:text-gray-200">
-          14 subscribers . 3 issues
-        </p>
-      </div>
+        <>
+            <div className="p-6 container md:w-2/3 xl:w-auto mx-auto  flex flex-col xl:items-stretch justify-between xl:flex-row">
+                <div className="xl:w-1/2 md:mb-14 xl:mb-0 relative h-auto flex items-center justify-center">
+                    <img src="https://cdn.tuk.dev/assets/components/26May-update/newsletter-1.png" alt="Envelope with a newsletter" role="img" className="h-full xl:w-full lg:w-1/2 w-full " />
+                </div>
+                <div className="w-full xl:w-1/2 xl:pl-40 xl:py-28 ">
+                    <h1 className="text-2xl md:text-4xl xl:text-5xl font-bold leading-10 text-gray-800 mb-4 text-center xl:text-left md:mt-0 mt-4">ONE STEP LEFT! :-)</h1>
+                    <p className="text-base leading-normal text-gray-600 text-center xl:text-left">To which e-mail address should we send the cookbook?</p>
+                    <form className="flex items-stretch mt-12">
+                        <input  
+                        aria-label="Email for newsletter"
+                        type="email" 
+                        placeholder="Your Email"
+                        autoComplete="email"
+                        required
+                        className="bg-gray-100 rounded-lg rounded-r-none text-base leading-none text-gray-800 p-5 w-4/5 border border-transparent focus:outline-none focus:border-gray-500" 
+                        />
+                        <button className="w-32 rounded-l-none hover:bg-indigo-600 bg-indigo-700 rounded text-base font-medium leading-none text-white p-5 uppercase focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700"
+                        type="submit"
+                        >
+                          send now
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </>
     );
-  };
-  
-  export default Subscribe;
+}
