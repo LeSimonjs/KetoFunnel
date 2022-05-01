@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function Footer() {
   return (
     <footer className="p-4 bg-transparent rounded-lg shadow md:px-6 md:py-8 dark:bg-gray-800">
-        <div className="sm:flex sm:items-center sm:justify-between">
+        <div className="flex items-center justify-between">
           <a href="https://www.instagram.com/keto4life34/" className="flex items-center mb-4 sm:mb-0" rel="nofollow noopener noreferrer" target="_blank">
               <img src="/instagram.svg" className="mr-3 h-8" />
               <span className="self-center text-2xl font-semibold whitespace-nowrap text-gray-700">Keto Life</span>
@@ -19,7 +19,7 @@ export default function Footer() {
           </ul>
       </div>
       <hr className="my-6 border-gray-300 sm:mx-auto dark:border-gray-700 lg:my-8" />
-      <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <Link href="/"><a className="hover:underline">Keto Life</a></Link>. All Rights Reserved.
+      <span className="block text-sm text-gray-500 text-center dark:text-gray-400">© 2022 <Link href="/"><a className="hover:underline">Keto Life</a></Link>. All Rights Reserved.
       </span>
     </footer>
   );

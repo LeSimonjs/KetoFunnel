@@ -15,11 +15,11 @@ const Index = () => {
 
                     </video>
                     </div>
-                    <div  role="contentinfo"  className="w-full lg:w-1/2 h-full">
-                        <p tabIndex="0" className="text-indigo-700 uppercase text-2xl mb-4">Free Cookbook</p>
+                    <div  role="contentinfo"  className="w-full lg:w-1/2 h-full text-center md:text-left">
+                        <p tabIndex="0" className="text-indigo-700 uppercase text-2xl mb-4 text-center md:text-left mt-2 md:mt-0">Free Cookbook</p>
                         <h1 tabIndex="0" className="text-indigo-700 text-4xl lg:text-5xl font-black mb-8">21 Easy And Healthy 
                         Keto Recipes You Need To Try!</h1>
-                        <p tabIndex="0" className="text-gray-800 font-regular mb-8"><strong>Losing weight may not seem easy right away—but it can be. </strong></p>
+                        <p tabIndex="0" className="text-gray-800 font-regular mb-8 "><strong>Losing weight may not seem easy right away—but it can be. </strong></p>
                         <p tabIndex="0" className="text-gray-800 font-regular mb-8">With the perfect balance of ingredients, instruction, and examples, this brand-new cookbook features three chapters, over 10,000 words, and a mixture of breakfast, dinner and lunch recipes. </p>
                         <p tabIndex="0" className="text-gray-800 font-regular mb-8">And all of it is designed to deliver you an unparalleled new way of losing weight.— <strong>completely free.</strong></p>
                         <div className="flex justify-center items-center">
