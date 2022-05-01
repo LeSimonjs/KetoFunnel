@@ -11,6 +11,7 @@ function MyApp({ Component, pageProps }) {
           name="Description"
           content="Free Keto Recipes ebook"
         />
+        <link rel="shortcut icon" href="/favicon2.png" />
       </Head>
 
       <Component {...pageProps} />

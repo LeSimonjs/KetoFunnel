@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <footer className="p-4 bg-white rounded-lg shadow md:px-6 md:py-8 dark:bg-gray-800">
+    <footer className="p-4 bg-transparent rounded-lg shadow md:px-6 md:py-8 dark:bg-gray-800">
         <div className="sm:flex sm:items-center sm:justify-between">
           <a href="https://www.instagram.com/keto4life34/" className="flex items-center mb-4 sm:mb-0" rel="nofollow noopener noreferrer" target="_blank">
               <img src="/instagram.svg" className="mr-3 h-8" />
