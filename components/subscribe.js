@@ -9,7 +9,7 @@ export default function Subscribe() {
             src="https://cdn.tuk.dev/assets/components/26May-update/newsletter-1.png"
             alt="Envelope with a newsletter"
             role="img"
-            className="h-full xl:w-full lg:w-1/2 w-full "
+            className="h-full xl:w-full lg:w-1/2 w-full"
           />
         </div>
         <div className="w-full xl:w-1/2 xl:pl-40 xl:py-28 ">
@@ -20,6 +20,7 @@ export default function Subscribe() {
             To which e-mail address should we send the cookbook?
           </p>
           <form className="mt-8 md:flex justify-center md:gap-2">
+            
             <input
               aria-label="Email for newsletter"
               type="email"

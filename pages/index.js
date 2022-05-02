@@ -10,10 +10,7 @@ const Index = () => {
                 
                 <div className="pt-4 lg:flex items-center relative z-10 container mx-auto">
                     <div className="w-full lg:w-1/2 h-full lg:mr-10 xl:pr-0 rounded-lg border-dotted border-4 border-indigo-700  shadow-2xl shadow-indigo-500/50">
-                    <video width="100%" height="100%" controls>
-                        <source src="21.mp4" type="video/mp4" />
-
-                    </video>
+                        <img src="21.gif" alt="keto recipes"/> 
                     </div>
                     <div  role="contentinfo"  className="w-full lg:w-1/2 h-full text-center md:text-left">
                         <p tabIndex="0" className="text-indigo-700 uppercase text-2xl mb-4 text-center md:text-left mt-2 md:mt-0">Free Cookbook</p>
@@ -24,7 +21,7 @@ const Index = () => {
                         <p tabIndex="0" className="text-gray-800 font-regular mb-8">And all of it is designed to deliver you an unparalleled new way of losing weight.— <strong>completely free.</strong></p>
                         <div className="flex justify-center items-center">
                             <Link href="/subscribe">
-                                <a className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 bg-indigo-700 transition duration-150 ease-in-out hover:bg-indigo-600 lg:text-xl font-bold  rounded text-white px-4 sm:px-10 border border-indigo-700 py-2 sm:py-4">FREE DOWNDOLAD</a>
+                                <a className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 bg-indigo-700 transition duration-150 ease-in-out hover:bg-indigo-600 lg:text-xl font-bold  rounded text-white px-4 sm:px-10 border border-indigo-700 py-2 sm:py-4 shadow-2xl shadow-indigo-500/50">FREE DOWNDOLAD</a>
                             </Link>
                         </div>
                     </div>

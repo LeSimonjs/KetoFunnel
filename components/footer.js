@@ -6,7 +6,7 @@ export default function Footer() {
         <div className="flex items-center justify-between">
           <a href="https://www.instagram.com/keto4life34/" className="flex items-center mb-4 sm:mb-0" rel="nofollow noopener noreferrer" target="_blank">
               <img src="/instagram.svg" className="mr-3 h-8" />
-              <span className="self-center text-2xl font-semibold whitespace-nowrap text-gray-700">Keto Life</span>
+              <span className="self-center text-2xl font-semibold whitespace-nowrap text-gray-500">Keto Life</span>
           </a>
           <ul className="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
           
