@@ -1,6 +1,33 @@
 import React from "react";
+import { useState } from "react";
 
 export default function Subscribe() {
+  const [email, setEmail] = useState("");
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
+
+  const subscribeMe = async (event) => {
+    event.preventDefault();
+
+    const res = await fetch("/api/subscribe", {
+      body: JSON.stringify({ email: email }),
+      headers: { "Content-Type": "application/json" },
+      method: "POST",
+    });
+
+    const { error, message } = await res.json();
+    if (error) {
+      setError(error);
+    } else {
+      setSuccess(message);
+    }
+  };
+
+  const changeEmail = (event) => {
+    const email = event.target.value;
+    setEmail(email);
+  };
+
   return (
     <div className="bg-gradient-to-b from-indigo-100">
       <div className="p-6 mb-20 container md:w-2/3 xl:w-auto mx-auto  flex flex-col xl:items-stretch justify-between xl:flex-row">
@@ -19,9 +46,12 @@ export default function Subscribe() {
           <p className="text-base leading-normal text-gray-600 text-center xl:text-left">
             To which e-mail address should we send the cookbook?
           </p>
-          <form className="mt-8 md:flex justify-center md:gap-2">
-            
+          <form
+            className="mt-8 md:flex justify-center md:gap-2"
+            onSubmit={subscribeMe}
+          >
             <input
+              onChange={changeEmail}
               aria-label="Email for newsletter"
               type="email"
               placeholder="Your Email"
@@ -36,6 +66,15 @@ export default function Subscribe() {
               SEND NOW
             </button>
           </form>
+          {success ? (
+            <span className="flex items-center text-sm font-bold text-green-700">
+              {success}
+            </span>
+          ) : (
+            <span className="flex items-center text-sm font-bold text-red-800">
+              {error}
+            </span>
+          )}
         </div>
       </div>
     </div>
